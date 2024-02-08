@@ -2,24 +2,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Extension</title>
-  <style>
-    body {
-      width: 200px;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-    #weatherInfo {
-      margin-top: 20px;
-    }
-  </style>
+
+  <!-- Link to css file -->
+  <link rel="stylesheet" href="popupstyle.css">
+
 </head>
 <body>
   <h2>Weather Extension</h2>
+  <div id="cityDisplay"></div>
   <label for="cityInput"> Enter City</label>
   <input type="text" id="cityInput" placeholder="City"> 
-  <button id="getWeather">Get Weather</button>
-  <div id="weatherInfo"></div>
+  <button class="weatherButton" id="getWeather"> Get Weather</button>
+  <div class="weather-container" style="display: none;"> 
+    <div class="weather-style" id="tempCelsius"></div>
+    <div class="weather-style" id="weatherDescription"></div>
+    <div class="weather-style" id="humidity"></div>
+    <div class="weather-style" id="wind"></div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -1,20 +1,19 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Weather Extension",
     "version": "1.0",
     "description": "Get current weather information",
     "icons": {
-      "48": "weather.png"
+      "48": "images/weather.png"
     },
-    "browser_action": {
-      "default_icon": "weather.png",
+    "action": {
+      "default_icon": "images/weather.png",
       "default_popup": "popup.html",
       "default_title": "Click to check weather"
     },
-    "permissions": ["http://api.openweathermap.org/*"],
+    "host_permissions": ["http://api.openweathermap.org/*"],
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+      "service_worker": "background.js"
     }
   }
   

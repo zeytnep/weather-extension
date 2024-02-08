@@ -1,0 +1,46 @@
+#cityDisplay {
+  text-align: center;
+    font-size: 15px; 
+    color:  2px solid #ccc;;
+}
+
+.weather-style {
+    font-size: 14px; /* Adjust the font size */
+    font-weight: 500;
+    color: #040a00b2; /* Set the text color */
+    margin-top: 5px; /* Add some space above the element */
+    text-align: left; /* or right, center, justify */
+  }
+  .weather-container {
+    border: 2px solid #ccc; /* Add a border */
+    background-color: white;
+    padding: 10px; /* Add some padding inside the container */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add some space below the container */
+  }
+  
+.weatherButton {
+    touch-action: manipulation;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    outline: 0;
+    border: 1.1px solid black;
+    background-color: rgb(212, 222, 207);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+body {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #E5E4E2;
+}
+
