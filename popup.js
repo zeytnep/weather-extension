@@ -24,8 +24,8 @@ document.getElementById("getWeather").addEventListener("click", function() {
       //console.log(request.weatherDescription);
       document.getElementById("humidity").textContent = `💧 ${request.humidity}`;
       document.getElementById("wind").textContent = `🌬️ ${request.wind}`;
-      document.getElementById("tempMax").textContent = `max ${request.tempMax}`;
-      document.getElementById("tempMin").textContent = `min ${request.tempMin}`;
+      document.getElementById("tempMax").textContent = ` ${request.tempMax}`;
+      document.getElementById("tempMin").textContent = ` ${request.tempMin}`;
     }
   });
   
